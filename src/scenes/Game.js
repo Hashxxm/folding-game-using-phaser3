@@ -1,4 +1,15 @@
-import Phaser from '../lib/phaser.js';
+import Phaser from 'phaser';
+
+import BG from '../../assets/bg.png';
+import KitePlace from '../../assets/cut lines 1.png';
+import Glue from '../../assets/glue.png';
+import Rope from '../../assets/rope.png';
+import Sticks from '../../assets/Wood.png';
+import KitePaper from '../../assets/small kites blue.png';
+import GlueTool from '../../assets/bottle tool.png';
+import RopeTool from '../../assets/rope tool.png';
+import SticksTool from '../../assets/Wood Tool.png';
+import KitePaperTool from '../../assets/cut kite blue.png';
 
 export default class Game extends Phaser.Scene
 {
@@ -9,18 +20,18 @@ export default class Game extends Phaser.Scene
 
     preload ()
     { 
-        this.load.image("BG", '../../assets/bg.png');
-        this.load.image("KitePlace", '../../assets/cut lines 1.png');
+        this.load.image("BG", BG);
+        this.load.image("KitePlace", KitePlace);
         
-        this.load.image("Glue", '../../assets/glue.png');
-        this.load.image("Rope", '../../assets/rope.png');
-        this.load.image("Sticks", '../../assets/Wood.png');
-        this.load.image("KitePaper", '../../assets/small kites blue.png');
+        this.load.image("Glue", Glue);
+        this.load.image("Rope", Rope);
+        this.load.image("Sticks", Sticks);
+        this.load.image("KitePaper", KitePaper);
 
-        this.load.image("GlueTool", '../../assets/bottle tool.png');
-        this.load.image("RopeTool", '../../assets/rope tool.png');
-        this.load.image("SticksTool", '../../assets/Wood Tool.png');
-        this.load.image("KitePaperTool", '../../assets/cut kite blue.png');
+        this.load.image("GlueTool", GlueTool);
+        this.load.image("RopeTool", RopeTool);
+        this.load.image("SticksTool", SticksTool);
+        this.load.image("KitePaperTool", KitePaperTool);
     }
 
     create ()
